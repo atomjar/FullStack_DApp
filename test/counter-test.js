@@ -7,16 +7,16 @@ describe('Counter', function () {
     const counter = await Counter.deploy()
     await counter.deployed()
 
-    expect(await counter.get()).to.equal(0)
+    expect(await counter.getCount()).to.equal(0)
 
     const incrementCountTx = await counter.incrementCount()
     // wait until the transaction is mined
     await incrementCountTx.wait()
-    expect(await counter.get()).to.equal(1)
+    expect(await counter.getCount()).to.equal(1)
 
     const decrementCountTx = await counter.decrementCount()
     // wait until the transaction is mined
     await decrementCountTx.wait()
-    expect(await counter.get()).to.equal(0)
+    expect(await counter.getCount()).to.equal(0)
   })
 })

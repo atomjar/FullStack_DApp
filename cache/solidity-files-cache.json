@@ -2,8 +2,8 @@
   "_format": "hh-sol-cache-2",
   "files": {
     "/Users/adamjahr/Documents/Web3/Learn/Full-DApp/contracts/Counter.sol": {
-      "lastModificationDate": 1656376320691,
-      "contentHash": "d0d2cc7d45ed2950742ed8f0815c8b3d",
+      "lastModificationDate": 1656469319996,
+      "contentHash": "dc6c4344b26d103b141ee384d350393a",
       "sourceName": "contracts/Counter.sol",
       "solcConfig": {
         "version": "0.8.4",
