@@ -5,13 +5,13 @@ import { ethers } from 'ethers';
 import Counter from './artifacts/contracts/Counter.sol/Counter.json';
 
 // smart contract address logged from Hard Hat CLI when it was deployed: 
-const counterAddress = "0xe7f1725E7734CE288F8367e1Bb143E90bb3F0512"
+const counterAddress = '0xe7f1725E7734CE288F8367e1Bb143E90bb3F0512'
 
 let localCount = ref(0)
 
 // request access to the user's MetaMask account
 async function requestAccount() {
-  await window.ethereum.request({ method: 'eth_requestAccounts' });
+  await window.ethereum.request({ method: 'eth_requestAccounts' })
 }
 
 // call the smart contract, read the current Count value
@@ -43,7 +43,7 @@ async function increment() {
   }
 }
 
-// call the smart contract, increment Count value
+// call the smart contract, decrement Count value
 async function decrement() {
   if (typeof window.ethereum !== 'undefined') {
     await requestAccount()
