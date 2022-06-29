@@ -4,7 +4,7 @@ import { ethers } from 'ethers';
 // import ABI for smart contract (after compilation)
 import Counter from './artifacts/contracts/Counter.sol/Counter.json';
 
-// smart contract address logged from Hard Hat CLI when it was deployed: 
+// smart contract address logged from Hard Hat CLI when it was deployed 
 const counterAddress = '0xe7f1725E7734CE288F8367e1Bb143E90bb3F0512'
 
 let localCount = ref(0)
