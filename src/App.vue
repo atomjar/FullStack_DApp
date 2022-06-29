@@ -1,7 +1,7 @@
 <script setup>
 import { ref } from 'vue';
 import { ethers } from 'ethers';
-// Import ABI for smart contract (after compilation)
+// import ABI for smart contract (after compilation)
 import Counter from './artifacts/contracts/Counter.sol/Counter.json';
 
 // smart contract address logged from Hard Hat CLI when it was deployed: 
@@ -25,7 +25,7 @@ async function get() {
       console.log('chainCount: ', chainCount.toNumber())
       console.log('localCount: ', localCount.value)
     } catch (err) {
-       console.log("Error: ", err)
+       console.log('Error: ', err)
     }
   }    
 }
