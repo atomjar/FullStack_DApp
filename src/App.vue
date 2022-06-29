@@ -5,7 +5,7 @@ import { ethers } from 'ethers';
 import Counter from './artifacts/contracts/Counter.sol/Counter.json';
 
 // smart contract address logged from Hard Hat CLI when it was deployed 
-const counterAddress = '0xe7f1725E7734CE288F8367e1Bb143E90bb3F0512'
+const counterAddress = '0xCf7Ed3AccA5a467e9e704C703E8D87F634fB0Fc9'
 
 let localCount = ref(0)
 
@@ -58,12 +58,10 @@ async function decrement() {
 </script>
 
 <template>
-  <div>
-    <p>Count is: {{ localCount }}</p>
-    <button @click="get">Get</button>
-    <button @click="increment">Increment</button>
-    <button @click="decrement">Decrement</button>
-  </div>
+  <p>Count is: {{ localCount }}</p>
+  <button @click="get">Get</button>
+  <button @click="increment">Increment</button>
+  <button @click="decrement">Decrement</button>
 </template>
 
 <style>
@@ -80,5 +78,9 @@ async function decrement() {
 body {
   display: flex;
   place-items: center;
+}
+
+button {
+  margin: 2.5px;
 }
 </style>
